@@ -1,3 +1,4 @@
+require('dotenv').config();
 module.exports = {
-    BACKEND: "http://localhost:8000"
+    BACKEND: process.env.BACKEND_SERVER
 }
