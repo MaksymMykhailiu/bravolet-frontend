@@ -66,7 +66,7 @@ const WorkHistory = () => {
                 Cell: ({ renderedCellValue, row }) => (
                     <>
                     {
-                        row ? <CheckCircleIcon color='green' width={24} />: <XCircleIcon color='red' width={24}/>
+                        renderedCellValue ? <CheckCircleIcon color='green' width={24} />: <XCircleIcon color='red' width={24}/>
                     }
                     </>
                 )
