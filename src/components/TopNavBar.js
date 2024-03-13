@@ -32,6 +32,11 @@ export default function TopNavBar(){
                     <span>Policy</span>
                 </Link>
             </Typography>
+            <Typography as="li" variant="small" color="blue-gray" className="p-1 font-normal">
+                <Link href="/workhistory">
+                    <span>Work History</span>
+                </Link>
+            </Typography>
         </ul>
     )
 
