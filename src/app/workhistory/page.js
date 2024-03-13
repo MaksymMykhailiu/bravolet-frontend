@@ -21,13 +21,13 @@ const TableFromArray = ( {header, body} ) => {
         <table className='table-auto w-full border-collapse border'>
             <thead>
                 <tr>
-                    {header.map((element)=> (<th className='border-b dark:border-slate-600 font-medium p-4 pl-8 pb-3 text-slate-400 dark:text-slate-200 text-left'>{element}</th>))}
+                    {header.map((element, index)=> (<th key={index} className='border-b dark:border-slate-600 font-medium p-4 pl-8 pb-3 text-slate-400 dark:text-slate-200 text-left'>{element}</th>))}
                 </tr>
             </thead>
             <tbody>
-                {body.map((row)=>(
-                    <tr>
-                        {row.map((cell)=>(<td className='border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400'>{cell}</td>))}
+                {body.map((row, index)=>(
+                    <tr key={index}>
+                        {row.map((cell, idx)=>(<td key={idx} className='border-b border-slate-100 dark:border-slate-700 p-4 pl-8 text-slate-500 dark:text-slate-400'>{cell}</td>))}
                     </tr>
                 ))}
             </tbody>
