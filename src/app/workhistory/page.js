@@ -122,7 +122,7 @@ const WorkHistory = () => {
             sorting: [
                 {
                     id: 'timestamp',
-                    desc: false
+                    desc: true
                 }
             ]
         }
